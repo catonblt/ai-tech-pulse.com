@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadata (filled by agents) -->
+  <meta name="article:title" content="{{TITLE}}">
+  <meta name="article:description" content="{{DESCRIPTION}}">
+  <meta name="article:published_time" content="{{DATE}}">
+  <meta name="article:author" content="{{AUTHOR}}">
+  <meta name="article:tags" content="{{TAGS}}">
+  <meta name="article:source" content="{{SOURCE_URL}}">
+  <meta name="article:reading-time" content="{{READING_TIME}}">
+
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ARTICLE_URL}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:image" content="{{FEATURED_IMAGE}}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ARTICLE_URL}}">
+  <meta property="twitter:title" content="{{TITLE}}">
+  <meta property="twitter:description" content="{{DESCRIPTION}}">
+  <meta property="twitter:image" content="{{FEATURED_IMAGE}}">
+
+  <title>{{TITLE}} - AI Tech Pulse</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="canonical" href="{{ARTICLE_URL}}">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress">
+    <div class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div>
+        <a href="/" class="site-logo">
+          <span>🤖</span>
+          <span>AI Tech Pulse</span>
+        </a>
+        <p class="site-tagline">Breaking News in AI & Technology</p>
+      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#latest">Latest</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/feed.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article Header -->
+  <section class="article-header">
+    <div class="container content-wrapper">
+      <h1 class="article-title">{{TITLE}}</h1>
+      <p class="article-subtitle">{{SUBTITLE}}</p>
+      <div class="article-meta">
+        <span data-date="{{DATE}}">{{FORMATTED_DATE}}</span>
+        <span>•</span>
+        <span data-reading-time>{{READING_TIME}} min read</span>
+        <span>•</span>
+        <span>By {{AUTHOR}}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="article-layout">
+      <!-- Article Content -->
+      <article class="content-wrapper">
+        <!-- Hero Image -->
+        <img src="{{FEATURED_IMAGE}}" alt="{{TITLE}}" class="article-hero-image">
+
+        <div class="article-content">
+          {{CONTENT}}
+
+          <!-- Source Attribution -->
+          <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 0.875rem; color: var(--text-light);">
+              <strong>Source:</strong> Information gathered from <a href="{{SOURCE_URL}}" target="_blank" rel="noopener">{{SOURCE_NAME}}</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Social Sharing -->
+        <div class="social-sharing">
+          <a href="https://twitter.com/intent/tweet?text={{ENCODED_TITLE}}&url={{ENCODED_URL}}"
+             class="social-share-btn share-twitter" target="_blank" rel="noopener">
+            Share on Twitter
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ENCODED_URL}}"
+             class="social-share-btn share-linkedin" target="_blank" rel="noopener">
+            Share on LinkedIn
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ENCODED_URL}}"
+             class="social-share-btn share-facebook" target="_blank" rel="noopener">
+            Share on Facebook
+          </a>
+          <a href="https://reddit.com/submit?url={{ENCODED_URL}}&title={{ENCODED_TITLE}}"
+             class="social-share-btn share-reddit" target="_blank" rel="noopener">
+            Share on Reddit
+          </a>
+        </div>
+
+        <!-- Affiliate Disclosure -->
+        <div class="affiliate-disclosure">
+          <strong>Affiliate Disclosure:</strong> This article may contain affiliate links.
+          If you click through and make a purchase, we may earn a commission at no additional cost to you.
+          This helps support our work and allows us to continue providing quality tech content.
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Related Articles -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Related Articles</h3>
+          <div id="related-articles">
+            <!-- Will be populated by build script -->
+          </div>
+        </div>
+
+        <!-- Recommended Product (if relevant) -->
+        <div class="sidebar-section" id="sidebar-product">
+          <!-- Monetization agent will add product here if relevant -->
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AI Tech Pulse</h3>
+          <p>Your daily source for AI and technology news</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="/">Home</a>
+          <a href="/#latest">Latest Articles</a>
+          <a href="/#about">About</a>
+          <a href="/feed.xml">RSS Feed</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="/#" data-filter="AI">Artificial Intelligence</a>
+          <a href="/#" data-filter="Tech News">Tech News</a>
+          <a href="/#" data-filter="Gadgets">Gadgets</a>
+          <a href="/#" data-filter="Startups">Startups</a>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <p style="font-size: 0.875rem; margin-top: 1rem;">
+            This site contains affiliate links. We may earn a commission from purchases made through these links.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 AI Tech Pulse. All rights reserved. | Built with ❤️ and AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

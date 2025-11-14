@@ -1,0 +1,320 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "MacBook Pro 14-inch M3",
+      "category": "laptops",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/macbook-pro.jpg",
+      "price": "$1,599",
+      "description": "Powerful laptop with M3 chip, perfect for AI development and creative work",
+      "keywords": ["AI", "laptop", "coding", "development", "MacBook", "Apple", "machine learning"]
+    },
+    {
+      "id": "prod-002",
+      "name": "iPhone 15 Pro",
+      "category": "phones",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/iphone-15-pro.jpg",
+      "price": "$999",
+      "description": "Latest iPhone with titanium design and powerful A17 Pro chip",
+      "keywords": ["iPhone", "smartphone", "Apple", "mobile", "photography", "5G"]
+    },
+    {
+      "id": "prod-003",
+      "name": "Sony WH-1000XM5 Headphones",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/sony-headphones.jpg",
+      "price": "$399",
+      "description": "Industry-leading noise cancellation for focused work and music enjoyment",
+      "keywords": ["headphones", "audio", "noise cancellation", "wireless", "productivity"]
+    },
+    {
+      "id": "prod-004",
+      "name": "Logitech MX Master 3S Mouse",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/mx-master.jpg",
+      "price": "$99",
+      "description": "Ergonomic wireless mouse with precision scrolling and customizable buttons",
+      "keywords": ["mouse", "productivity", "wireless", "ergonomic", "office", "coding"]
+    },
+    {
+      "id": "prod-005",
+      "name": "Dell UltraSharp 27 4K Monitor",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/dell-monitor.jpg",
+      "price": "$649",
+      "description": "Stunning 4K display with excellent color accuracy for developers and creators",
+      "keywords": ["monitor", "display", "4K", "productivity", "development", "design"]
+    },
+    {
+      "id": "prod-006",
+      "name": "NVIDIA GeForce RTX 4090",
+      "category": "components",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/rtx-4090.jpg",
+      "price": "$1,599",
+      "description": "Ultimate GPU for AI training, machine learning, and high-end gaming",
+      "keywords": ["GPU", "graphics card", "AI", "machine learning", "gaming", "NVIDIA", "deep learning"]
+    },
+    {
+      "id": "prod-007",
+      "name": "Mechanical Keyboard - Keychron K8 Pro",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/keychron.jpg",
+      "price": "$109",
+      "description": "Premium mechanical keyboard with hot-swappable switches and wireless connectivity",
+      "keywords": ["keyboard", "mechanical", "typing", "productivity", "wireless", "coding"]
+    },
+    {
+      "id": "prod-008",
+      "name": "Amazon Echo (5th Gen)",
+      "category": "smart-home",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/echo.jpg",
+      "price": "$99",
+      "description": "Smart speaker with Alexa, improved audio, and smart home integration",
+      "keywords": ["smart home", "Alexa", "voice assistant", "speaker", "IoT", "automation"]
+    },
+    {
+      "id": "prod-009",
+      "name": "Samsung 990 Pro 2TB SSD",
+      "category": "components",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/samsung-ssd.jpg",
+      "price": "$179",
+      "description": "Blazing fast NVMe SSD for lightning-quick boot times and data transfer",
+      "keywords": ["SSD", "storage", "NVMe", "performance", "upgrade", "PC"]
+    },
+    {
+      "id": "prod-010",
+      "name": "Anker PowerCore 20,000mAh",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/anker-powerbank.jpg",
+      "price": "$49",
+      "description": "High-capacity portable charger for phones, tablets, and more",
+      "keywords": ["battery", "charger", "portable", "power bank", "travel", "mobile"]
+    },
+    {
+      "id": "prod-011",
+      "name": "Raspberry Pi 5",
+      "category": "components",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/raspberry-pi-5.jpg",
+      "price": "$79",
+      "description": "Latest Raspberry Pi for DIY projects, home servers, and learning programming",
+      "keywords": ["Raspberry Pi", "DIY", "maker", "programming", "IoT", "projects", "single board computer"]
+    },
+    {
+      "id": "prod-012",
+      "name": "Apple AirPods Pro (2nd Gen)",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/airpods-pro.jpg",
+      "price": "$249",
+      "description": "Premium wireless earbuds with active noise cancellation and spatial audio",
+      "keywords": ["earbuds", "wireless", "Apple", "noise cancellation", "audio", "AirPods"]
+    },
+    {
+      "id": "prod-013",
+      "name": "Synology DS224+ NAS",
+      "category": "storage",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/synology-nas.jpg",
+      "price": "$329",
+      "description": "Network attached storage for home servers, backups, and media streaming",
+      "keywords": ["NAS", "storage", "backup", "server", "data", "cloud", "home server"]
+    },
+    {
+      "id": "prod-014",
+      "name": "Microsoft Surface Pro 9",
+      "category": "laptops",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/surface-pro-9.jpg",
+      "price": "$999",
+      "description": "Versatile 2-in-1 laptop and tablet with stylus support",
+      "keywords": ["laptop", "tablet", "2-in-1", "Microsoft", "Surface", "stylus", "portable"]
+    },
+    {
+      "id": "prod-015",
+      "name": "Google Pixel 8 Pro",
+      "category": "phones",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/pixel-8-pro.jpg",
+      "price": "$999",
+      "description": "Google's flagship phone with advanced AI features and exceptional camera",
+      "keywords": ["smartphone", "Google", "Pixel", "Android", "camera", "AI", "photography"]
+    },
+    {
+      "id": "prod-016",
+      "name": "Elgato Stream Deck",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/stream-deck.jpg",
+      "price": "$149",
+      "description": "Customizable control panel for streamers and productivity enthusiasts",
+      "keywords": ["streaming", "productivity", "automation", "control", "workflow", "content creation"]
+    },
+    {
+      "id": "prod-017",
+      "name": "ChatGPT Plus Subscription",
+      "category": "software",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/chatgpt-plus.jpg",
+      "price": "$20/month",
+      "description": "Premium access to GPT-4 and advanced AI features",
+      "keywords": ["AI", "ChatGPT", "software", "productivity", "OpenAI", "automation", "writing"]
+    },
+    {
+      "id": "prod-018",
+      "name": "TP-Link WiFi 6E Router",
+      "category": "networking",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/tp-link-router.jpg",
+      "price": "$299",
+      "description": "High-speed WiFi 6E router for blazing fast internet throughout your home",
+      "keywords": ["router", "WiFi", "networking", "internet", "6E", "wireless", "speed"]
+    },
+    {
+      "id": "prod-019",
+      "name": "Logitech C920 Webcam",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/c920-webcam.jpg",
+      "price": "$79",
+      "description": "Full HD webcam for video calls, streaming, and content creation",
+      "keywords": ["webcam", "video", "streaming", "conference", "remote work", "content creation"]
+    },
+    {
+      "id": "prod-020",
+      "name": "Blue Yeti USB Microphone",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/blue-yeti.jpg",
+      "price": "$129",
+      "description": "Professional USB microphone for podcasts, streaming, and recordings",
+      "keywords": ["microphone", "audio", "podcast", "streaming", "recording", "content creation"]
+    },
+    {
+      "id": "prod-021",
+      "name": "Samsung Galaxy Tab S9",
+      "category": "tablets",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/galaxy-tab-s9.jpg",
+      "price": "$799",
+      "description": "Premium Android tablet with S Pen for productivity and creativity",
+      "keywords": ["tablet", "Samsung", "Android", "S Pen", "productivity", "drawing"]
+    },
+    {
+      "id": "prod-022",
+      "name": "Corsair Vengeance 32GB DDR5 RAM",
+      "category": "components",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/corsair-ram.jpg",
+      "price": "$129",
+      "description": "High-performance DDR5 memory for demanding applications and gaming",
+      "keywords": ["RAM", "memory", "DDR5", "upgrade", "performance", "PC", "gaming"]
+    },
+    {
+      "id": "prod-023",
+      "name": "DJI Mini 3 Pro Drone",
+      "category": "gadgets",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/dji-mini-3.jpg",
+      "price": "$759",
+      "description": "Compact drone with 4K camera for aerial photography and videography",
+      "keywords": ["drone", "DJI", "photography", "video", "aerial", "camera", "gadget"]
+    },
+    {
+      "id": "prod-024",
+      "name": "Herman Miller Aeron Chair",
+      "category": "office",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/aeron-chair.jpg",
+      "price": "$1,395",
+      "description": "Ergonomic office chair designed for all-day comfort and posture support",
+      "keywords": ["chair", "ergonomic", "office", "furniture", "productivity", "health", "workspace"]
+    },
+    {
+      "id": "prod-025",
+      "name": "Meta Quest 3 VR Headset",
+      "category": "vr",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/quest-3.jpg",
+      "price": "$499",
+      "description": "Next-gen VR headset with mixed reality capabilities",
+      "keywords": ["VR", "virtual reality", "Meta", "Quest", "gaming", "metaverse", "mixed reality"]
+    },
+    {
+      "id": "prod-026",
+      "name": "Kindle Paperwhite",
+      "category": "gadgets",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/kindle-paperwhite.jpg",
+      "price": "$139",
+      "description": "E-reader with glare-free display and weeks-long battery life",
+      "keywords": ["Kindle", "e-reader", "reading", "books", "Amazon", "display"]
+    },
+    {
+      "id": "prod-027",
+      "name": "Anker USB-C Hub",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/anker-hub.jpg",
+      "price": "$59",
+      "description": "7-in-1 USB-C hub with HDMI, USB ports, and SD card readers",
+      "keywords": ["hub", "USB-C", "adapter", "connectivity", "laptop", "ports"]
+    },
+    {
+      "id": "prod-028",
+      "name": "Nomad Base Station Pro",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/nomad-charger.jpg",
+      "price": "$229",
+      "description": "Premium wireless charging pad for multiple devices simultaneously",
+      "keywords": ["wireless charging", "charger", "Qi", "iPhone", "Apple Watch", "accessories"]
+    },
+    {
+      "id": "prod-029",
+      "name": "LG C3 OLED TV 55-inch",
+      "category": "entertainment",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/lg-c3-oled.jpg",
+      "price": "$1,399",
+      "description": "Stunning OLED display with perfect blacks and vibrant colors",
+      "keywords": ["TV", "OLED", "4K", "entertainment", "display", "gaming", "home theater"]
+    },
+    {
+      "id": "prod-030",
+      "name": "Jackery Portable Power Station",
+      "category": "accessories",
+      "amazonLink": "https://amazon.com/dp/YOUR-AFFILIATE-LINK",
+      "imageUrl": "https://example.com/jackery-power.jpg",
+      "price": "$399",
+      "description": "Portable battery generator for outdoor adventures and emergency backup",
+      "keywords": ["battery", "power station", "portable", "emergency", "camping", "backup power"]
+    }
+  ],
+  "categories": {
+    "laptops": "High-performance laptops for work and creativity",
+    "phones": "Latest smartphones with cutting-edge features",
+    "accessories": "Essential tech accessories to enhance productivity",
+    "components": "PC components for building and upgrading systems",
+    "smart-home": "Smart home devices for automation and convenience",
+    "storage": "Storage solutions for data backup and media",
+    "software": "Software subscriptions and digital products",
+    "networking": "Networking equipment for fast, reliable connectivity",
+    "tablets": "Tablets for entertainment and productivity on the go",
+    "gadgets": "Cool tech gadgets and innovative devices",
+    "office": "Office equipment for a productive workspace",
+    "vr": "Virtual reality and immersive technology",
+    "entertainment": "Entertainment devices for home theater",
+    "components": "Computer components and upgrades"
+  }
+}

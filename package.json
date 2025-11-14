@@ -1,0 +1,49 @@
+{
+  "name": "ai-tech-pulse",
+  "version": "1.0.0",
+  "description": "Fully automated tech news website with AI agents for content curation, writing, monetization, and marketing",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "curator": "node agents/content-curator.js",
+    "writer": "node agents/writer-editor.js",
+    "monetize": "node agents/monetization.js",
+    "marketing": "node agents/marketing.js",
+    "pipeline": "node orchestrator.js",
+    "pipeline:auto": "node orchestrator.js --auto-publish",
+    "pipeline:dry-run": "node orchestrator.js --dry-run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx http-server -p 8080 -c-1",
+    "setup": "npm install && echo 'Setup complete! Set ANTHROPIC_API_KEY and configure config.json'",
+    "deploy": "npm run build && echo 'Deploy to GitHub Pages or your hosting provider'"
+  },
+  "keywords": [
+    "ai",
+    "tech-news",
+    "automation",
+    "content-generation",
+    "affiliate-marketing",
+    "claude",
+    "agents"
+  ],
+  "author": "AI Tech Pulse Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "jsdom": "^24.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-tech-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-tech-pulse/issues"
+  },
+  "homepage": "https://ai-tech-pulse.com"
+}

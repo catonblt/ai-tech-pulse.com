@@ -1,0 +1,148 @@
+{
+  "templates": {
+    "twitter": {
+      "formats": [
+        {
+          "name": "news-focused",
+          "structure": "[HEADLINE] [KEY_FACT] [URL] [HASHTAGS]",
+          "example": "🚀 OpenAI launches GPT-5 with 10x performance improvements. Early tests show remarkable reasoning capabilities. https://ai-tech-pulse.com/article #AI #TechNews #OpenAI"
+        },
+        {
+          "name": "question-engagement",
+          "structure": "[PROVOCATIVE_QUESTION] [BRIEF_CONTEXT] [URL] [HASHTAGS]",
+          "example": "Will AI replace software developers? 🤔 New study reveals surprising insights about the future of coding. Read more: https://ai-tech-pulse.com/article #AI #Coding #TechNews"
+        },
+        {
+          "name": "stat-focused",
+          "structure": "[STRIKING_STAT] [CONTEXT] [URL] [HASHTAGS]",
+          "example": "📊 87% of tech leaders plan to increase AI investments in 2024. Here's what that means for the industry: https://ai-tech-pulse.com/article #AI #TechTrends"
+        }
+      ],
+      "bestPractices": [
+        "Keep it under 280 characters including URL",
+        "Use 1-2 relevant emojis for visual appeal",
+        "Include 2-4 hashtags max",
+        "Ask questions to encourage engagement",
+        "Post during peak hours (9 AM, 1 PM, 5 PM)",
+        "Use Twitter threads for longer stories"
+      ]
+    },
+    "linkedin": {
+      "formats": [
+        {
+          "name": "professional-insight",
+          "structure": "[HOOK]\n\n[KEY_POINTS]\n\n[BUSINESS_IMPACT]\n\n[QUESTION]\n\n[URL] [HASHTAGS]",
+          "example": "The AI landscape is shifting faster than ever.\n\nKey takeaways from today's announcement:\n✓ 10x performance improvement\n✓ New enterprise features\n✓ Enhanced security protocols\n\nFor tech leaders, this means rethinking your AI strategy for 2024.\n\nWhat's your organization's AI roadmap?\n\nhttps://ai-tech-pulse.com/article #ArtificialIntelligence #TechLeadership"
+        }
+      ],
+      "bestPractices": [
+        "Start with a strong hook in the first line",
+        "Use bullet points for readability",
+        "Emphasize business/career implications",
+        "End with an engaging question",
+        "Keep hashtags minimal (2-3 max)",
+        "Tag relevant companies or people",
+        "Post during business hours (Tue-Thu 10 AM - 2 PM)"
+      ]
+    },
+    "reddit": {
+      "subreddit_guidelines": {
+        "r/technology": {
+          "rules": [
+            "Must be about technology",
+            "No editorialized titles",
+            "No blog spam or self-promotion without context",
+            "Provide value in comments"
+          ],
+          "posting_strategy": "Share with original headline, add thoughtful comment with key insights"
+        },
+        "r/artificial": {
+          "rules": [
+            "AI-related content only",
+            "Technical discussions encouraged",
+            "No low-effort posts"
+          ],
+          "posting_strategy": "Focus on technical aspects, engage in discussion"
+        },
+        "r/programming": {
+          "rules": [
+            "Programming-related content",
+            "High-quality submissions only",
+            "Constructive comments required"
+          ],
+          "posting_strategy": "Emphasize code/development angle, provide technical context"
+        }
+      },
+      "bestPractices": [
+        "Follow subreddit-specific rules strictly",
+        "Don't spam - space out posts",
+        "Engage authentically in comments",
+        "Provide value beyond just sharing links",
+        "Build karma before self-promotion",
+        "Use original article titles (no clickbait)"
+      ]
+    },
+    "facebook": {
+      "formats": [
+        {
+          "name": "conversational",
+          "structure": "[HOOK_QUESTION] [CONTEXT] [PERSONAL_ANGLE] [URL]",
+          "example": "Ever wonder how AI will change your daily work? 🤖\n\nI just read this fascinating article about the latest developments, and honestly, it's both exciting and a little intimidating.\n\nThe part about how AI assistants could handle 80% of routine tasks really got me thinking about what that means for creative work.\n\nWhat do you think? Are you excited or concerned about AI's role in your field?\n\nhttps://ai-tech-pulse.com/article"
+        }
+      ],
+      "bestPractices": [
+        "Write in a conversational, friendly tone",
+        "Use 2-4 emojis naturally",
+        "Ask questions to encourage comments",
+        "Keep paragraphs short (2-3 lines max)",
+        "Minimal hashtags (Facebook doesn't prioritize them)",
+        "Post during evening hours (6-9 PM)"
+      ]
+    }
+  },
+  "engagement_tactics": {
+    "best_posting_times": {
+      "twitter": ["9:00 AM", "1:00 PM", "5:00 PM"],
+      "linkedin": ["10:00 AM", "12:00 PM", "2:00 PM"],
+      "facebook": ["6:00 PM", "8:00 PM"],
+      "reddit": ["7:00 AM", "11:00 AM", "6:00 PM"]
+    },
+    "best_posting_days": {
+      "twitter": ["Tuesday", "Wednesday", "Thursday"],
+      "linkedin": ["Tuesday", "Wednesday", "Thursday"],
+      "facebook": ["Wednesday", "Thursday", "Friday"],
+      "reddit": ["Weekdays during business hours"]
+    },
+    "content_variations": {
+      "first_post": "Announce the article, key facts",
+      "followup_1_week": "Share a key insight or quote",
+      "followup_2_weeks": "Ask a discussion question related to the article",
+      "evergreen_monthly": "Reshare if still relevant with new angle"
+    }
+  },
+  "hashtag_library": {
+    "ai": ["#AI", "#ArtificialIntelligence", "#MachineLearning", "#DeepLearning", "#AINews"],
+    "tech": ["#TechNews", "#Technology", "#Innovation", "#TechTrends", "#DigitalTransformation"],
+    "gadgets": ["#Gadgets", "#TechReview", "#ConsumerTech", "#TechGadgets"],
+    "startups": ["#Startups", "#TechStartups", "#Innovation", "#Entrepreneurship"],
+    "coding": ["#Coding", "#Programming", "#SoftwareDevelopment", "#DevCommunity"],
+    "cybersecurity": ["#Cybersecurity", "#InfoSec", "#DataPrivacy", "#CyberSecurity"],
+    "trending": ["#TechTwitter", "#TechCommunity", "#FutureTech"]
+  },
+  "performance_tracking": {
+    "metrics_to_track": [
+      "Engagement rate (likes, comments, shares)",
+      "Click-through rate to article",
+      "Best performing time slots",
+      "Most effective hashtags",
+      "Platform-specific performance"
+    ],
+    "optimization_tips": [
+      "A/B test different headlines",
+      "Track which platforms drive most traffic",
+      "Note which topics get most engagement",
+      "Adjust posting schedule based on performance",
+      "Build relationship with engaged followers"
+    ]
+  }
+}

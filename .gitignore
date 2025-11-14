@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Build outputs (keep these in repo for GitHub Pages)
+# Uncomment if you want to exclude build outputs
+# build-report.json
+# articles-data.json
+# sitemap.xml
+# feed.xml
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# API keys and secrets
+secrets.json
+credentials.json
+
+# Analytics and logs (optional - comment out if you want to track these)
+# analytics/*.json
+
+# Social posts (optional - comment out if you want to track these)
+# social-posts/*.json
+
+# Large media files (if you're storing them locally)
+# assets/images/*.jpg
+# assets/images/*.png
+# assets/images/*.gif
+
+# Draft files (if you don't want to commit drafts)
+# drafts/*.html
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+desktop.ini
+
+# Linux
+.directory
+
+# Backups
+*.bak
+*.backup
+backup/

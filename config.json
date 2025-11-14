@@ -1,0 +1,174 @@
+{
+  "site": {
+    "name": "AI Tech Pulse",
+    "tagline": "Breaking News in AI & Technology",
+    "url": "https://ai-tech-pulse.com",
+    "description": "Your daily source for the latest developments in artificial intelligence, technology, and gadgets",
+    "author": "AI Tech Pulse Team",
+    "email": "contact@ai-tech-pulse.com"
+  },
+  "content": {
+    "topics": [
+      "artificial intelligence",
+      "machine learning",
+      "tech startups",
+      "gadgets",
+      "cybersecurity",
+      "software development",
+      "blockchain",
+      "consumer electronics",
+      "tech industry news"
+    ],
+    "articlesPerDay": 3,
+    "minWordCount": 600,
+    "maxWordCount": 1200,
+    "sourcePriority": [
+      "TechCrunch",
+      "The Verge",
+      "Wired",
+      "Ars Technica",
+      "MIT Technology Review",
+      "VentureBeat",
+      "Engadget"
+    ],
+    "excludeSources": [
+      "low-quality-blog.com"
+    ],
+    "imageRequirements": {
+      "required": true,
+      "minWidth": 1200,
+      "minHeight": 630,
+      "formats": ["jpg", "png", "webp"]
+    },
+    "credibilityThreshold": 7
+  },
+  "writing": {
+    "tone": "professional-casual",
+    "perspective": "tech-enthusiast",
+    "voice": "authoritative-yet-conversational",
+    "style": {
+      "useInvertedPyramid": true,
+      "avoidPassiveVoice": true,
+      "explainJargon": true,
+      "includeContext": true,
+      "addAnalysis": true
+    },
+    "seoOptimization": true,
+    "internalLinkingEnabled": true,
+    "targetReadingLevel": "grade-10",
+    "headlines": {
+      "style": "clear-specific-seo",
+      "maxLength": 60,
+      "includeNumbers": true,
+      "avoidClickbait": true
+    }
+  },
+  "monetization": {
+    "amazonAffiliateId": "YOUR-AFFILIATE-ID",
+    "maxAdsPerArticle": 4,
+    "minWordsBetweenAds": 200,
+    "enableSidebarAds": true,
+    "adFormats": {
+      "productCards": true,
+      "textLinks": true,
+      "comparisonTables": true,
+      "sidebarBoxes": true
+    },
+    "disclosureRequired": true,
+    "relevanceThreshold": 8
+  },
+  "marketing": {
+    "socialMedia": {
+      "twitter": {
+        "enabled": true,
+        "postImmediately": true,
+        "tweetsPerArticle": 3,
+        "optimalPostingTimes": ["09:00", "13:00", "17:00"],
+        "hashtagStrategy": "relevant-trending",
+        "maxHashtags": 5,
+        "includeImage": true
+      },
+      "linkedin": {
+        "enabled": true,
+        "postDelay": "2 hours after Twitter",
+        "professionalTone": true,
+        "tagCompanies": true
+      },
+      "reddit": {
+        "enabled": false,
+        "requireManualReview": true,
+        "subreddits": ["r/technology", "r/artificial", "r/gadgets", "r/programming"]
+      },
+      "facebook": {
+        "enabled": false,
+        "conversationalTone": true
+      }
+    },
+    "seo": {
+      "submitToSearchEngines": true,
+      "pingSitemaps": true,
+      "submitToAggregators": ["techmeme"],
+      "generateMetaTags": true,
+      "optimizeImages": true
+    },
+    "email": {
+      "enabled": false,
+      "weeklyDigest": true,
+      "sendDay": "Friday",
+      "sendTime": "10:00",
+      "subjectLineVariations": 3
+    },
+    "syndication": {
+      "medium": true,
+      "devto": true,
+      "useCanonicalLinks": true,
+      "delayBeforeSyndication": "48 hours"
+    },
+    "engagement": {
+      "monitorMentions": true,
+      "autoReply": false,
+      "notifyOnEngagement": true,
+      "trackBacklinks": true
+    }
+  },
+  "automation": {
+    "autoPublish": false,
+    "requireManualReview": true,
+    "notifyOnNewArticles": true,
+    "schedule": {
+      "contentCurator": "06:00",
+      "writerEditor": "07:00",
+      "monetization": "08:00",
+      "build": "08:30",
+      "deploy": "08:45",
+      "marketing": "09:00"
+    },
+    "retryLogic": {
+      "enabled": true,
+      "maxRetries": 3,
+      "backoffMultiplier": 2
+    }
+  },
+  "analytics": {
+    "trackPerformance": true,
+    "generateWeeklyReports": true,
+    "reportDay": "Sunday",
+    "reportTime": "18:00",
+    "metrics": [
+      "pageViews",
+      "socialEngagement",
+      "affiliateClicks",
+      "conversionRate",
+      "topArticles",
+      "trafficSources"
+    ]
+  },
+  "paths": {
+    "articles": "./articles",
+    "drafts": "./drafts",
+    "assets": "./assets",
+    "agents": "./agents",
+    "analytics": "./analytics",
+    "socialPosts": "./social-posts"
+  }
+}
