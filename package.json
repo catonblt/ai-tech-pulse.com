@@ -29,7 +29,7 @@
   "author": "AI Tech Pulse Team",
   "license": "MIT",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.20.0",
+    "@anthropic-ai/sdk": "^0.27.0",
     "jsdom": "^24.0.0"
   },
   "devDependencies": {

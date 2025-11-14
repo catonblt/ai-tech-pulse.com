@@ -67,7 +67,7 @@ Make the stories realistic and timely. Focus on major announcements, product lau
 
   try {
     const message = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-5-sonnet-20240620',
       max_tokens: 4000,
       messages: [{
         role: 'user',
@@ -116,7 +116,7 @@ Write a comprehensive research brief (300-500 words) that will be used by our wr
 
   try {
     const message = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-5-sonnet-20240620',
       max_tokens: 2000,
       messages: [{
         role: 'user',
