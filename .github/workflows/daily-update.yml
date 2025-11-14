@@ -1,0 +1,171 @@
+name: Daily Content Pipeline
+
+on:
+  # Run daily at 9 AM UTC
+  schedule:
+    - cron: '0 9 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      skip-curator:
+        description: 'Skip content curator'
+        required: false
+        default: 'false'
+      auto-publish:
+        description: 'Auto-publish articles'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Set up environment
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "ANTHROPIC_API_KEY is set: ${{ secrets.ANTHROPIC_API_KEY != '' }}"
+          echo "Current date: $(date)"
+
+      - name: Run Content Curator
+        if: ${{ github.event.inputs.skip-curator != 'true' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "🔍 Running Content Curator..."
+          node agents/content-curator.js
+          echo "✓ Content Curator complete"
+
+      - name: Wait between stages
+        run: sleep 10
+
+      - name: Run Writer/Editor
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "✍️ Running Writer/Editor..."
+          node agents/writer-editor.js
+          echo "✓ Writer/Editor complete"
+
+      - name: Wait between stages
+        run: sleep 10
+
+      - name: Run Monetization
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "💰 Running Monetization..."
+          if [ "${{ github.event.inputs.auto-publish }}" = "true" ]; then
+            node agents/monetization.js --auto-publish
+          else
+            node agents/monetization.js
+          fi
+          echo "✓ Monetization complete"
+
+      - name: Build website
+        run: |
+          echo "🏗️ Building website..."
+          node build.js
+          echo "✓ Build complete"
+
+      - name: Run Marketing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "📢 Running Marketing..."
+          node agents/marketing.js
+          echo "✓ Marketing complete"
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "🤖 Automated content update - $(date +'%Y-%m-%d %H:%M')"
+          git push
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-content
+          path: |
+            articles/
+            analytics/
+            social-posts/
+            build-report.json
+            sitemap.xml
+            feed.xml
+          retention-days: 30
+
+  deploy-pages:
+    needs: run-pipeline
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [run-pipeline, deploy-pages]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Generate summary
+        run: |
+          echo "## Pipeline Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date:** $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Pipeline Status:** ${{ needs.run-pipeline.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deploy Status:** ${{ needs.deploy-pages.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+          echo "1. Check the social-posts/ folder for marketing content" >> $GITHUB_STEP_SUMMARY
+          echo "2. Review analytics/marketing-report.md" >> $GITHUB_STEP_SUMMARY
+          echo "3. Post content to social media platforms" >> $GITHUB_STEP_SUMMARY
