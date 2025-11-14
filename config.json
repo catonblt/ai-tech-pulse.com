@@ -5,7 +5,7 @@
     "url": "https://ai-tech-pulse.com",
     "description": "Your daily source for the latest developments in artificial intelligence, technology, and gadgets",
     "author": "AI Tech Pulse Team",
-    "email": "contact@ai-tech-pulse.com"
+    "email": "catonblt@gmail.com"
   },
   "content": {
     "topics": [
@@ -64,7 +64,7 @@
     }
   },
   "monetization": {
-    "amazonAffiliateId": "YOUR-AFFILIATE-ID",
+    "amazonAffiliateId": "catonblt-20",
     "maxAdsPerArticle": 4,
     "minWordsBetweenAds": 200,
     "enableSidebarAds": true,

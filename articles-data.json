@@ -1,0 +1,22 @@
+{
+  "lastUpdated": "2025-11-14T20:20:56.770Z",
+  "totalArticles": 1,
+  "articles": [
+    {
+      "title": "Major AI Breakthrough: New Model Achieves Human-Level Language Understanding",
+      "description": "Researchers unveil a revolutionary AI system that can understand context and nuance like never before, marking a significant milestone in natural language processing.",
+      "excerpt": "In a groundbreaking development that could reshape the future of artificial intelligence, researchers have announced a new AI model that demonstrates human-level understanding of natural language. The...",
+      "url": "/articles/sample-ai-breakthrough-in-natural-language-processing.html",
+      "date": "2024-11-14T09:00:00Z",
+      "author": "AI Tech Pulse Team",
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "NLP",
+        "Research"
+      ],
+      "readingTime": 6,
+      "featuredImage": "https://via.placeholder.com/1200x630?text=AI+Breakthrough+in+NLP"
+    }
+  ]
+}

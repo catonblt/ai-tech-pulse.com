@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Tech Pulse</title>
+    <link>https://ai-tech-pulse.com</link>
+    <description>Your daily source for the latest developments in artificial intelligence, technology, and gadgets</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Nov 2025 20:20:56 GMT</lastBuildDate>
+    <atom:link href="https://ai-tech-pulse.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Major AI Breakthrough: New Model Achieves Human-Level Language Understanding</title>
+      <link>https://ai-tech-pulse.com/articles/sample-ai-breakthrough-in-natural-language-processing.html</link>
+      <description>Researchers unveil a revolutionary AI system that can understand context and nuance like never before, marking a significant milestone in natural language processing.</description>
+      <pubDate>Thu, 14 Nov 2024 09:00:00 GMT</pubDate>
+      <guid>https://ai-tech-pulse.com/articles/sample-ai-breakthrough-in-natural-language-processing.html</guid>
+      <category>AI</category>
+      <category>Machine Learning</category>
+      <category>NLP</category>
+      <category>Research</category>
+    </item>
+  </channel>
+</rss>

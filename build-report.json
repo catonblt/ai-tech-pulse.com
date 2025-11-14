@@ -1,0 +1,25 @@
+{
+  "buildTime": "2025-11-14T20:20:56.773Z",
+  "totalArticles": 1,
+  "recentArticles": [
+    {
+      "title": "Major AI Breakthrough: New Model Achieves Human-Level Language Understanding",
+      "date": "2024-11-14T09:00:00Z",
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "NLP",
+        "Research"
+      ]
+    }
+  ],
+  "categories": {
+    "AI": 1,
+    "Machine Learning": 1,
+    "NLP": 1,
+    "Research": 1
+  },
+  "stats": {
+    "averageReadingTime": 6
+  }
+}
